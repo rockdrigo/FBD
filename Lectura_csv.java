@@ -11,7 +11,7 @@ public class Lectura_csv {
          
         CsvReader mi_csv = new CsvReader("./P1.csv"); //Cambien a la ruta de su archivo
         mi_csv.readHeaders(); // Leemos las Cabeceras, las cuales nos dan informacion de cada campo
-         
+			
         while (mi_csv.readRecord())
         {
             String nombre = mi_csv.get(0);
